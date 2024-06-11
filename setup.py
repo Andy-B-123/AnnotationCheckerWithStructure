@@ -7,15 +7,15 @@ setup(
     version="0.1.0",
     packages=find_packages(),
     install_requires=[
-        # List your dependencies here
+        pandas
     ],
     entry_points={
         'console_scripts': [
             'bioinformatics_script=bioinformatics_script.main:main',
         ],
     },
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="Andreas Bachler",
+    author_email="Andy.Bachler@gmail.com",
     description="A simple bioinformatics script.",
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
