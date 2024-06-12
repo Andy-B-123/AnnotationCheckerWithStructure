@@ -3,7 +3,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="bioinformatics_script",
+    name="AnnotationCheckerWithStructure",
     version="0.1.2",
     packages=find_packages(),
     install_requires=[
@@ -11,7 +11,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'bioinformatics_script=bioinformatics_script.main:main',
+            'AnnotationCheckerWithStructure=AnnotationCheckerWithStructure.main:main',
         ],
     },
     author="Andreas Bachler",
