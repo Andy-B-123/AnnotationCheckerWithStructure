@@ -15,11 +15,11 @@ setup(
         ],
     },
     author="Andreas Bachler",
-    author_email="Andy.Bachler@gmail.com",
+    author_email="Andy.Bachler@example.com",
     description="A simple bioinformatics script.",
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url="https://github.com/yourusername/bioinformatics-script",
+    url="https://github.com/Andy-B-123/AnnotationCheckerWithStructure",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
