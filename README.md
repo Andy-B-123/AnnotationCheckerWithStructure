@@ -7,10 +7,10 @@ A simple bioinformatics script.
 You can install the released version of bioinformatics_script from PyPI:
 
 ```sh
-pip install bioinformatics_script
+pip install AnnotationCheckerWithStructure
 ```
 
 Usage
 
-```bioinformatics_script```
+```AnnotationCheckerWithStructure```
 
