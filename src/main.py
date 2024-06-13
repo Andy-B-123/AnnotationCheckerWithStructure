@@ -1,10 +1,10 @@
 import argparse
 from pathlib import Path
 import pandas as pd
-from io_utils import read_fasta
-from data_processing import protein_recs, process_protein_df, filter_genes_transcripts, write_to_fasta
-from plotting import create_report
-from foldseek_runner import run_foldseek
+from .io_utils import read_fasta
+from .data_processing import protein_recs, process_protein_df, filter_genes_transcripts, write_to_fasta
+from .plotting import create_report
+from .foldseek_runner import run_foldseek
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Generate protein sequences from genome and GFF annotation.")
@@ -31,7 +31,7 @@ def main():
     write_to_fasta(filtered_df, output_filtered_fasta_file)
 
     if args.foldseek_database_path:
-        run_foldseek(output_filtered_fasta_file, args.foldseek_database_path, foldseek_path=args.foldseek_path, threads=args.threads)
+        run_foldseek(output_filtered_fasta_file, args.foldseek_database_path, output_directory, foldseek_path=args.foldseek_path, threads=args.threads)
 
 if __name__ == "__main__":
     main()

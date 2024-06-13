@@ -5,13 +5,19 @@ from setuptools import setup, find_packages
 setup(
     name="AnnotationCheckerWithStructure",
     version="0.1.2",
-    packages=find_packages(),
+    packages=find_packages(where='src'),
+    package_dir={'': 'src'},
+    include_package_data=True,
     install_requires=[
-        "pandas>=2.0.3"
+        "biopython==1.79",
+        "BCBio-GFF==0.7.5",
+        "pandas==1.3.5",
+        "matplotlib==3.5.1",
+        "seaborn==0.11.2"
     ],
     entry_points={
         'console_scripts': [
-            'AnnotationCheckerWithStructure=AnnotationCheckerWithStructure.main:main',
+            'AnnotationCheckerWithStructure=main:main',
         ],
     },
     author="Andreas Bachler",

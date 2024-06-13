@@ -1,1 +1,6 @@
-pandas
+biopython==1.79
+BCBio-GFF==0.7.5
+pandas==1.3.5
+matplotlib==3.5.1
+seaborn==0.11.2
+unittest2==1.1.0
