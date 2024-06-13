@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="AnnotationCheckerWithStructure",
-    version="0.1.3c",
+    version="0.1.4",
     packages=find_packages(where='src'),
     package_dir={'': 'src'},
     include_package_data=True,
