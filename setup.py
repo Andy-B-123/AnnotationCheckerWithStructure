@@ -4,16 +4,16 @@ from setuptools import setup, find_packages
 
 setup(
     name="AnnotationCheckerWithStructure",
-    version="0.1.5",
+    version="0.1.6",
     packages=find_packages(where='src'),
     package_dir={'': 'src'},
     include_package_data=True,
     install_requires=[
-        "biopython==1.79",
+        "biopython>1",
         "BCBio-GFF==0.7.1",
-        "pandas==1.3.5",
-        "matplotlib==3.5.1",
-        "seaborn==0.11.2"
+        "pandas>1",
+        "matplotlib>3",
+        "seaborn>0.10"
     ],
     entry_points={
         'console_scripts': [
